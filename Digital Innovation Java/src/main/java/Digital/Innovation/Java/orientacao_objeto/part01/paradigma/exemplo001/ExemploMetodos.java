@@ -9,11 +9,11 @@ public class ExemploMetodos {
 
         System.out.println(pessoa.andar());
         
-        //exercicioFinal();
+        exercicioFinal();
     }
     
     // Execução para teste do exercício final da parte 01
-   /* private static void exercicioFinal() {
+    private static void exercicioFinal() {
     	var santana = new Carro(5, 2);
     	var ferrari = new Carro(2, 0);
     	var landal = new Carro(7, 3);
@@ -27,5 +27,5 @@ public class ExemploMetodos {
     	System.out.println(landal.adicionaPessoa(4)+" , "+landal.getPessoasNoCarro()+" pessoa(s) no landal.");
     	System.out.println(landal.removePessoa(5)+" , "+landal.getPessoasNoCarro()+" pessoa(s) no landal.");
     	System.out.println(landal.adicionaPessoa(2)+" , "+landal.getPessoasNoCarro()+" pessoa(s) no landal."+"\n"+"-------------------");
-    }*/
+    }
 }
