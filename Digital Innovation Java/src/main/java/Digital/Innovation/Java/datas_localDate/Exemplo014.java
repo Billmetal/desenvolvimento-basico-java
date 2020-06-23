@@ -16,7 +16,17 @@ public class Exemplo014 {
         LocalDateTime futuro = agora.plusHours(1).plusDays(2).plusSeconds(12);
 
         System.out.println(futuro);
-        // 2019-07-17T01:02:28.076
+        // 2019-07-17T01:02:28.076]
+        
+        // Resolução do exercício final
+        
+        LocalDateTime momento = LocalDateTime.of(2010, 05, 15, 10, 00, 00);
+        
+        System.out.println(momento);
+        
+        LocalDateTime momentoResultado = momento.plusYears(4).plusMonths(6).plusHours(13);
+        
+        System.out.println(momentoResultado);
 
     }
 }
