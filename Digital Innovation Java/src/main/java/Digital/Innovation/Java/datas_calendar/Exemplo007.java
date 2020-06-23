@@ -1,6 +1,7 @@
 package Digital.Innovation.Java.datas_calendar;
 
 import java.util.Calendar;
+import java.util.Date;
 
 /**
  *  Algumas conversões de data
@@ -24,7 +25,33 @@ public class Exemplo007 {
 
         System.out.printf("%tT\n", agora);
         //20:58:11
+        
+        // Testes de resolução de exercício final
+        Exemplo007 e = new Exemplo007();
+        
+        System.out.println(e.diasParaPagar(15, 07, 2020));
+        
+        System.out.println(e.diasParaPagar(30, 06, 2020));
+        
+        System.out.println(e.diasParaPagar(05, 07, 2020));
 
+    }
+    
+    private String diasParaPagar(int dia,int mes,int ano) {
+    	Calendar dataVencimento = Calendar.getInstance();
+    	dataVencimento.set(ano, (mes - 1), dia);
+    	dataVencimento.add(Calendar.DATE, 10);
+    	switch(Calendar.DAY_OF_WEEK) {
+    	case 1:
+    		dataVencimento.add(Calendar.DATE, 1);
+    		break;
+    	case 7:
+    		dataVencimento.add(Calendar.DATE, 2);
+    		break;	
+    	}
+    	Date hoje = new Date();
+    	Date pagarAte = dataVencimento.getTime();
+    	return "O cliente tem "+(pagarAte.getTime() - hoje.getTime() + 3600000L) / 86400000L+" dias para pagar a fatura .";
     }
 }
 
