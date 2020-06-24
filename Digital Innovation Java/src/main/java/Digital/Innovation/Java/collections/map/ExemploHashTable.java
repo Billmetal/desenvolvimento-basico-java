@@ -1,4 +1,4 @@
-package Digital.Innovation.Java.map;
+package Digital.Innovation.Java.collections.map;
 
 import java.util.Hashtable;
 import java.util.Map;

@@ -1,4 +1,4 @@
-package Digital.Innovation.Java.map;
+package Digital.Innovation.Java.collections.map;
 
 import java.util.Iterator;
 import java.util.Map;
